@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet
+@WebServlet("/tutoria/*")
 class TutoriaServlet extends HttpServlet {
 	
 	@Override
@@ -17,7 +17,7 @@ class TutoriaServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		PrintWriter writer = resp.getWriter();
-		writer.print("Foi chamado um GET. Essa ação retorna um cadastro.");
+		writer.print("Foi chamado um GET. Essa ação retorna um cadastro de tutoria.");
 		
 	}
 	
@@ -26,7 +26,7 @@ class TutoriaServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		PrintWriter writer = resp.getWriter();
-		writer.print("Foi chamado um POST. Essa ação cria um novo cadastro.");
+		writer.print("Foi chamado um POST. Essa ação cria um novo cadastro de tutoria.");
 		
 	}
 	
@@ -35,7 +35,7 @@ class TutoriaServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		PrintWriter writer = resp.getWriter();
-		writer.print("Foi chamado um PUT. Essa ação substitui/atualiza um cadastro.");
+		writer.print("Foi chamado um PUT. Essa ação substitui/atualiza um cadastro de tutoria.");
 		
 	}
 	
@@ -44,7 +44,7 @@ class TutoriaServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		PrintWriter writer = resp.getWriter();
-		writer.print("Foi chamado um DELETE. Essa ação remove um cadastro.");
+		writer.print("Foi chamado um DELETE. Essa ação remove um cadastro de tutoria.");
 		
 	}
 
