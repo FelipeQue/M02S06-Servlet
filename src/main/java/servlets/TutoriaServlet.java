@@ -1,4 +1,4 @@
-package petshop;
+package servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,16 +9,15 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet(value = "/pet")
-public class PetServlet extends HttpServlet {
-
+@WebServlet(value = "/tutoria")
+public class TutoriaServlet extends HttpServlet {
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		
-		String nome = req.getParameter("nome");
 		PrintWriter writer = resp.getWriter();
-		writer.print("Foi chamado um GET. Essa ação retorna um cadastro de pet.");
+		writer.print("Foi chamado um GET. Essa ação retorna um cadastro de tutoria.");
 		
 	}
 	
@@ -27,7 +26,7 @@ public class PetServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		PrintWriter writer = resp.getWriter();
-		writer.print("Foi chamado um POST. Essa ação cria um novo cadastro de pet.");
+		writer.print("Foi chamado um POST. Essa ação cria um novo cadastro de tutoria.");
 		
 	}
 	
@@ -36,7 +35,7 @@ public class PetServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		PrintWriter writer = resp.getWriter();
-		writer.print("Foi chamado um PUT. Essa ação substitui/atualiza um cadastro de pet.");
+		writer.print("Foi chamado um PUT. Essa ação substitui/atualiza um cadastro de tutoria.");
 		
 	}
 	
@@ -45,8 +44,8 @@ public class PetServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		PrintWriter writer = resp.getWriter();
-		writer.print("Foi chamado um DELETE. Essa ação remove um cadastro de pet.");
+		writer.print("Foi chamado um DELETE. Essa ação remove um cadastro de tutoria.");
 		
 	}
-	
+
 }

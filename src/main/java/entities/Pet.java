@@ -1,4 +1,4 @@
-package petshop;
+package entities;
 
 public class Pet {
 
@@ -10,6 +10,10 @@ public class Pet {
     private String dataNascimento;
     private double peso;
     private Tutoria tutoria;
+    
+    public Pet() {
+    	
+    }
     
 	public Pet(String nome, String especie, String raca, String sexo, String dataNascimento, double peso) {
 		this.nome = nome;
@@ -82,6 +86,12 @@ public class Pet {
 
 	public void setPeso(double peso) {
 		this.peso = peso;
+	}
+
+	@Override
+	public String toString() {
+		return "Pet [id=" + id + ", nome=" + nome + ", especie=" + especie + ", raca=" + raca + ", sexo=" + sexo
+				+ ", dataNascimento=" + dataNascimento + ", peso=" + peso + ", tutoria=" + tutoria + "]";
 	}
     
 
