@@ -90,8 +90,9 @@ public class Pet {
 
 	@Override
 	public String toString() {
-		return "Pet [id=" + id + ", nome=" + nome + ", especie=" + especie + ", raca=" + raca + ", sexo=" + sexo
-				+ ", dataNascimento=" + dataNascimento + ", peso=" + peso + ", tutoria=" + tutoria + "]";
+		return "*PET* "
+				+ "Id: " + id + ", Nome: " + nome + ", Espécie: " + especie + ", Raça: " + raca + ", Sexo: " + sexo
+				+ ", Data de nascimento: " + dataNascimento + ", Peso: " + peso + ", Tutoria: " + tutoria + ". |";
 	}
     
 

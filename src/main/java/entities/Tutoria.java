@@ -11,6 +11,10 @@ public class Tutoria {
     private String email;
     private List<Pet> pets;
     
+    public Tutoria() {
+    	
+    }
+    
 	public Tutoria(String nome, String endereco, String telefone, String email) {
 		super();
 		this.nome = nome;
@@ -65,6 +69,12 @@ public class Tutoria {
 
 	public void setPets(List<Pet> pets) {
 		this.pets = pets;
+	}
+
+	@Override
+	public String toString() {
+		return "*TUTORE* Id: " + id + ", Nome: " + nome + ", Endereço: " + endereco + ", Telefone: " + telefone + ", E-mail: "
+				+ email + ", Pets: " + pets + ".";
 	}
     
 	

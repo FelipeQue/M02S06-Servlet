@@ -58,7 +58,7 @@ public class PetServlet extends HttpServlet {
 		novoPet.setPeso(Double.parseDouble(req.getParameter("peso")));
 		petRepository.adicionarPet(novoPet);
 		
-		writer.print("Pet " + novoPet.getNome() + " adicionado com sucesso. ");
+		writer.print("Pet adicionado com sucesso: " + novoPet);
 		
 		
 	}
@@ -77,7 +77,7 @@ public class PetServlet extends HttpServlet {
 		    	petAtualizar.setSexo(req.getParameter("sexo"));
 		    	petAtualizar.setDataNascimento(req.getParameter("data de nascimento"));
 		    	petAtualizar.setPeso(Double.parseDouble(req.getParameter("peso")));
-		    	writer.print("Informações de pet atualizadas.");
+		    	writer.print("Informações de pet atualizadas. " + petAtualizar);
 		    } else {
 		    	writer.print("Pet não encontrado.");
 		    }
